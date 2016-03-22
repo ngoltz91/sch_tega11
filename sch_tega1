@@ -1,0 +1,456 @@
+function get_sets() 
+--Idle Sets-- 
+sets.Idle = {} 
+sets.Idle.Standard = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Chironic gloves",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Idle.Sublimation = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Chironic gloves",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+
+
+
+--Precast Sets-- 
+sets.Precast = {} 
+sets.Precast.FC.Standard = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Loquacious earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Chironic gloves",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Swith cape",waist="Channeler's stone",legs="Orvail pants",feet="Merlinic crackows"} 
+
+sets.Precast.JA = {} 
+sets.Precast.JA.PenuryParsimony = {} 
+sets.Precast.JA.ImmanencePerpetuation = {} 
+sets.Precast.JA.EbullienceRapture = {}
+--Midcast Sets-- 
+sets.Midcast = {} 
+sets.Midcast.Cures = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.LowNukes = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.HighNukes = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.Helix = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.Stun = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.Enhancing = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.Stoneskin = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Midcast.Regen = {main="Akademos",sub="Niobid strap",range="Ghastly tathlum", 
+    head="Merlinic hood",neck="Sanctity necklace",ear1="Moldavite earring",ear2="Friomisi earring", 
+    body="Arbatel gown +1",hands="Amalric gages",ring1="Shiva ring",ring2="Shiva ring", 
+    back="Bookworm's cape",waist="Channeler's stone",legs="Merlinic shalwar",feet="Merlinic crackows"} 
+sets.Obi = {} 
+sets.Obi.Fire = {waist='Karin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Earth = {waist='Dorin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Water = {waist='Suirin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Wind = {waist='Furin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Ice = {waist='Hyorin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Thunder = {waist='Rairin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Light = {waist='Korin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+sets.Obi.Dark = {waist='Anrin Obi',back='Twilight Cape',ring1='Zodiac Ring'} 
+
+sets.Aftercast = {} 
+end 
+function precast(spell) 
+end 
+
+    if spell.english == 'Penury' or spell.english == 'Parsimony' then 
+        equip(sets.Precast.JA.PenuryParsimony) 
+end 
+    if spell.english == 'Ebullience' or spell.english == 'Rapture' then 
+        equip(sets.Precast.JA.EbullienceRapture) 
+end 
+    if spell.english == 'Immanence' or spell.english == 'Perpetuation' then 
+        equip(sets.Precast.JA.ImmanencePerpetuation) 
+end  
+function midcast(spell) 
+    if spell.english == 'Cure' or spell.english == 'Cure II' or spell.english == 'Cure III' or spell.english == 'Cure IV' then 
+        equip(sets.Midcast.Cures) 
+    if spell.element == world.weather_element or spell_element == world.day_element then 
+        equip(sets.Obi[spell.element]) 
+end 
+    if buffactive.rapture then 
+        equip(sets.Precast.JA.EbullienceRapture) 
+end  
+    if string.find(spell.english,'helix') then 
+        equip(sets.Midcast.Helix) 
+end 
+    if spell.english == 'Kaustra' then 
+        equip(sets.Midcast.Helix) 
+    if spell.element == world.weather_element or spell_element == world.day_element then 
+        equip(sets.Obi[spell.element]) 
+end 
+    if spell.english == 'Stone' or spell.english == 'Thunder' or spell.english == 'Water' or spell.english == 'Fire' or spell.english == 'Blizzard' or spell.english == 'Aero' then 
+        equip(sets.Midcast.LowNukes) 
+end
+    if spell.element == world.weather_element or spell_element == world.day_element then 
+        equip(sets.Obi[spell.element]) 
+end 
+    if buffactive.ebullience then 
+        equip(sets.Precast.JA.EbullienceRapture) 
+end 
+    if spell.english == 'Stone III' or spell.english == 'Thunder III' or spell.english == 'Water III' or spell.english == 'Fire III' or spell.english == 'Blizzard III' or spell.english == 'Aero III' or spell.english == 'Stone IV' or spell.english == 'Thunder IV' or spell.english == 'Water IV' or spell.english == 'Fire IV' or spell.english == 'Blizzard IV' or spell.english == 'Aero IV' or spell.english == 'Stone V' or spell.english == 'Thunder V' or spell.english == 'Water V' or spell.english == 'Fire V' or spell.english == 'Blizzard V' or spell.english == 'Aero V'then 
+        equip(sets.Midcast.HighNukes) 
+end
+    if spell.element == world.weather_element or spell_element == world.day_element then 
+        equip(sets.Obi[spell.element]) 
+end 
+    if buffactive.ebullience then 
+        equip(sets.Precast.JA.EbullienceRapture) 
+end  
+    if spell.skill == 'EnhancingMagic' then 
+end    
+    if spell.english == 'Embrava' then 
+        equip(sets.Midcast.Enhancing) 
+end
+    if not buffactive.perpetuance then 
+        add_to_chat(8,'--------- Perpetuance is down ---------') 
+end 
+    if not buffactive.accession then 
+        add_to_chat(8,'--------- Accession is down ---------') 
+end 
+    if not buffactive.penury then 
+        add_to_chat(8,'--------- Penury is down ---------') 
+end 
+    if buffactive.perpetuance then 
+        equip(sets.Midcast.Enhancing,{hands="Savant's Bracers +2"}) 
+    else 
+        equip(sets.Midcast.Enhancing) 
+end 
+    if spell.english == 'Stoneskin' then 
+        equip(sets.Midcast.Stoneskin) 
+    if buffActive['Stoneskin'] then 
+        send_command('@wait 2.5;@input //cancel Stoneskin') 
+end 
+    if spell.english == 'Slow' or spell.english == 'Paralyze' or spell.english == 'Blind' or spell.english == 'Silence' or spell.english == 'Break' or spell.english == 'Sleep' or spell.english == 'Sleep II' or spell.english == 'Sleepga' or spell.english == 'Dispel' then 
+        equip(sets.Midcast.Enfeebling) 
+end 
+    if spell.english == 'Sneak' then 
+        send_command('@wait 1.8;cancel 71;') 
+end 
+    function aftercast(spell) 
+        equip(sets.Idle.Standard)
+end 
+    if buffactive['Sublimation: Activated'] then 
+        equip(sets.Idle.Sublimation) 
+end 
+    if buffactive['Sandstorm'] then 
+        equip(sets.Idle.Sandstorm) 
+end
+    if buffactive['Sublimation: Activated'] then 
+        equip(sets.Idle.SublimationSandstorm) 
+end  
+    if spell.english == 'Sleep' or spell.english == 'Sleepga' then 
+        send_command('@wait 50;input /echo ------- '..spell.english..' is wearing off in 10 seconds -------') 
+    elseif spell.english == 'Sleep II' or spell.english == 'Sleepga II' then 
+        send_command('@wait 80;input /echo ------- '..spell.english..' is wearing off in 10 seconds -------') 
+    elseif spell.english == 'Break' or spell.english == 'Breakga' then 
+        send_command('@wait 20;input /echo ------- '..spell.english..' is wearing off in 10 seconds -------') 
+end 
+
+
+function get_sets()
+
+
+    include('Mote-Include.lua')
+end
+
+
+
+function job_setup()
+    
+    petWeaponskills = S{"Slapstick", "Knockout", "Magic Mortar",
+        "Chimera Ripper", "String Clipper",  "Cannibal Blade", "Bone Crusher", "String Shredder",
+        "Arcuballista", "Daze", "Armor Piercer", "Armor Shatterer"}
+    
+    
+    petModes = {
+        ['Harlequin Head'] = 'Melee',
+        ['Sharpshot Head'] = 'Ranged',
+        ['Valoredge Head'] = 'Tank',
+        ['Stormwaker Head'] = 'Magic',
+        ['Soulsoother Head'] = 'Heal',
+        ['Spiritreaver Head'] = 'Nuke'
+        }
+
+ 
+    magicPetModes = S{'Nuke','Heal','Magic'}
+    
+ 
+    state.PetMode = M{['description']='Pet Mode', 'None', 'Melee', 'Ranged', 'Tank', 'Magic', 'Heal', 'Nuke'}
+end
+
+
+function user_setup()
+    state.OffenseMode:options('Normal', 'Acc', 'Fodder')
+    state.HybridMode:options('Normal', 'DT')
+    state.WeaponskillMode:options('Normal', 'Acc', 'Fodder')
+    state.PhysicalDefenseMode:options('PDT', 'Evasion')
+
+    
+    defaultManeuvers = {
+        ('Melee') = {'Fire Maneuver', 'Thunder Maneuver', 'Wind Maneuver', 'Light Maneuver'},
+        ('Ranged') = {'Wind Maneuver', 'Fire Maneuver', 'Thunder Maneuver', 'Light Maneuver'},
+        ('Tank') = {'Earth Maneuver', 'Dark Maneuver', 'Light Maneuver', 'Wind Maneuver'},
+        ('Magic') = {'Ice Maneuver', 'Light Maneuver', 'Dark Maneuver', 'Earth Maneuver'},
+        ('Heal') = {'Light Maneuver', 'Dark Maneuver', 'Water Maneuver', 'Earth Maneuver'},
+        ('Nuke') = {'Ice Maneuver', 'Dark Maneuver', 'Light Maneuver', 'Earth Maneuver'}
+    }
+
+    update_pet_mode()
+    select_default_macro_book()
+end
+
+
+
+function init_gear_sets()
+    
+    sets.precast.FC = {head="Haruspex Hat",ear2="Loquacious Earring",hands="Thaumas Gloves"}
+
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
+
+    
+   
+    sets.precast.JA('Tactical Switch') = {feet="Cirque Scarpe +2"}
+    
+    sets.precast.JA('Repair') = {feet="Foire Babouches"}
+
+    sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Cirque Farsetto +2",hands="Foire Dastanas",back="Dispersal Mantle"}
+
+
+
+    
+    sets.precast.Waltz = {
+        head="Whirlpool Mask",ear1="Roundel Earring",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Spiral Ring",
+        back="Iximulew Cape",legs="Nahtirah Trousers",feet="Thurandaut Boots +1"}
+        
+  
+    sets.precast.Waltz('Healing Waltz') = {}
+
+       
+   
+    sets.precast.WS = {
+        head="Whirlpool Mask",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Manibozho Jerkin",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
+        back="Dispersal Mantle",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Manibozho Boots"}
+
+  
+    sets.precast.WS('Stringing Pummel') = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
+        ring1="Spiral Ring",waist="Soil Belt"})
+    sets.precast.WS('Stringing Pummel').Mod = set_combine(sets.precast.WS['Stringing Pummel'], {legs="Nahtirah Trousers"})
+
+    sets.precast.WS('Victory Smite') = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
+        waist="Thunder Belt"}
+
+    sets.precast.WS('Shijin Spiral') = set_combine(sets.precast.WS, {neck="Light Gorget",waist="Light Belt"})
+
+    
+
+
+    sets.midcast.FastRecast = {
+        head="Haruspex Hat",ear2="Loquacious Earring",
+        body="Otronif Harness +1",hands="Regimen Mittens",
+        legs="Manibozho Brais",feet="Otronif Boots +1"}
+        
+
+    sets.midcast.Pet.Cure = {legs="Foire Churidars"}
+
+    sets.midcast.Pet('Elemental Magic') = {feet="Pitre Babouches"}
+
+    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +2", hands="Cirque Guanti +2", legs="Cirque Pantaloni +2"}
+
+ 
+    sets.resting = {head="Pitre Taj",neck="Wiglen Gorget",
+        ring1="Sheltered Ring",ring2="Paguroidea Ring"}
+    
+
+ 
+
+    sets.idle = {range="Divinator",
+        head="Pitre Taj",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Foire Tobe",hands="Regimen Mittens",ring1="Sheltered Ring",ring2="Paguroidea Ring",
+        back="Shadow Mantle",waist="Hurch'lan Sash",legs="Foire Churidars",feet="Hermes' Sandals"}
+
+    sets.idle.Town = set_combine(sets.idle, {main="Tinhaspa"})
+
+    sets.idle.Pet = sets.idle
+
+  
+    sets.idle.Pet.Engaged = {
+        head="Foire Taj",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Cirque Earring",
+        body="Foire Tobe",hands="Regimen Mittens",ring1="Sheltered Ring",ring2="Paguroidea Ring",
+        back="Dispersal Mantle",waist="Hurch'lan Sash",legs="Foire Churidars",feet="Foire Babouches"}
+
+    sets.idle.Pet.Engaged.Ranged = set_combine(sets.idle.Pet.Engaged, {hands="Cirque Guanti +2",legs="Cirque Pantaloni +2"})
+
+    sets.idle.Pet.Engaged.Nuke = set_combine(sets.idle.Pet.Engaged, {legs="Cirque Pantaloni +2",feet="Cirque Scarpe +2"})
+
+    sets.idle.Pet.Engaged.Magic = set_combine(sets.idle.Pet.Engaged, {legs="Cirque Pantaloni +2",feet="Cirque Scarpe +2"})
+
+
+
+    sets.defense.Evasion = {
+        head="Whirlpool Mask",neck="Twilight Torque",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2="Beeline Ring",
+        back="Ik Cape",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+
+    sets.defense.PDT = {
+        head="Whirlpool Mask",neck="Twilight Torque",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
+        back="Shadow Mantle",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+
+    sets.defense.MDT = {
+        head="Whirlpool Mask",neck="Twilight Torque",
+        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+        back="Tuilha Cape",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+
+    sets.Kiting = {feet="Hermes' Sandals"}
+
+   
+    sets.engaged = {
+        head="Whirlpool Mask",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Qaaxo Harness",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
+        back="Dispersal Mantle",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Otronif Boots +1"}
+    sets.engaged.Acc = {
+        head="Whirlpool Mask",neck="Ej Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Qaaxo Harness",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
+        back="Dispersal Mantle",waist="Hurch'lan Sash",legs="Manibozho Brais",feet="Otronif Boots +1"}
+    sets.engaged.DT = {
+        head="Whirlpool Mask",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Otronif Harness +1",hands="Regimen Mittens",ring1="Defending Ring",ring2="Epona's Ring",
+        back="Iximulew Cape",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Otronif Boots +1"}
+    sets.engaged.Acc.DT = {
+        head="Whirlpool Mask",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        body="Otronif Harness +1",hands="Regimen Mittens",ring1="Defending Ring",ring2="Beeline Ring",
+        back="Iximulew Cape",waist="Hurch'lan Sash",legs="Manibozho Brais",feet="Otronif Boots +1"}
+end
+
+
+
+function job_pet_midcast(spell, action, spellMap, eventArgs)
+    if petWeaponskills:contains(spell.english) then
+        classes.CustomClass = "Weaponskill"
+    end
+end
+
+
+
+function job_buff_change(buff, gain)
+    if buff == 'Wind Maneuver' then
+        handle_equipping_gear(player.status)
+    end
+end
+
+
+function job_pet_change(pet, gain)
+    update_pet_mode()
+end
+
+
+function job_pet_status_change(newStatus, oldStatus)
+    if newStatus == 'Engaged' then
+        display_pet_status()
+    end
+end
+
+
+
+function job_update(cmdParams, eventArgs)
+    update_pet_mode()
+end
+
+
+
+function display_current_job_state(eventArgs)
+    display_pet_status()
+end
+
+
+
+function job_self_command(cmdParams, eventArgs)
+    if cmdParams[1] == 'maneuver' then
+        if pet.isvalid then
+            local man = defaultManeuvers[state.PetMode.value]
+            if man and tonumber(cmdParams[2]) then
+                man = man[tonumber(cmdParams[2])]
+            end
+
+            if man then
+                send_command('input /pet "'..man..'" <me>')
+            end
+        else
+            add_to_chat(123,'No valid pet.')
+        end
+    end
+end
+
+
+
+function get_pet_mode()
+    if pet.isvalid then
+        return petModes[pet.head] or 'None'
+    else
+        return 'None'
+    end
+end
+
+
+function update_pet_mode()
+    state.PetMode:set(get_pet_mode())
+    update_custom_groups()
+end
+
+
+function update_custom_groups()
+    classes.CustomIdleGroups:clear()
+    if pet.isvalid then
+        classes.CustomIdleGroups:append(state.PetMode.value)
+    end
+end
+
+
+function display_pet_status()
+    if pet.isvalid then
+        local petInfoString = pet.name..' ['..pet.head..']: '..tostring(pet.status)..'  TP='..tostring(pet.tp)..'  HP%='..tostring(pet.hpp)
+        
+        if magicPetModes:contains(state.PetMode.value) then
+            petInfoString = petInfoString..'  MP%='..tostring(pet.mpp)
+        end
+        
+        add_to_chat(122,petInfoString)
+    end
+end
+
+
+function select_default_macro_book()
+   
+    if player.sub_job == 'DNC' then
+        set_macro_page(2, 9)
+    elseif player.sub_job == 'NIN' then
+        set_macro_page(3, 9)
+    elseif player.sub_job == 'THF' then
+        set_macro_page(4, 9)
+    else
+        set_macro_page(1, 9)
+    end
+end
+
